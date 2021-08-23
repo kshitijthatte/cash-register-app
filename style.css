@@ -84,3 +84,8 @@ td {
   border: 2px solid var(--secondary-color);
   padding: 0.5rem;
 }
+
+#error-message {
+  display: none;
+  color: red;
+}
