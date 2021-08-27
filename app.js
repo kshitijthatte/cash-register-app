@@ -13,7 +13,7 @@ const showMessage = (message) => {
 
 checkButton.addEventListener("click", () => {
   if (billAmount.value > 0) {
-    if (cashGiven.value >= billAmount.value) {
+    if (Number(cashGiven.value) >= Number(billAmount.value)) {
       errorMessage.style.display = "none";
       const returnAmount = cashGiven.value - billAmount.value;
       calculateChange(returnAmount);
